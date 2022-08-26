@@ -1,3 +1,4 @@
-spd = 4;
-xSpeed = 0;
-ySpeed = 0;
+jump = 15;
+spd = 3;
+space = 2;
+friction = 0.5;

@@ -1,5 +1,61 @@
-/// @description Insert description here
-// You can write your code in this editor
+	
+	
+	if( keyboard_check(vk_right) && place_free(x + space,y))
+	{
+		x += spd;
+	}
+	
+	if( keyboard_check(vk_left) && place_free(x - space,y))
+	{
+		x-= spd;
+	}
+	
+	if(keyboard_check_pressed(vk_up) && !place_free(x, y + space))
+	{
+		vspeed = -jump;
+	}
+	
+	if(place_free(x, y + space))
+	{
+		gravity = 1;
+	}
+	else
+	{
+		gravity = 0;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//isRight = keyboard_check(vk_right);
+    //isLeft = keyboard_check(vk_left);        
+	//isJump = keyboard_check_pressed(vk_space);   
+	//onGround = place_meeting(x, y+2, objChao);
+
+	//var movimento = isRight - isLeft;
+	
+	//x	x = x +  (movimento * walkSpeed);
+	
+	//if(onGround)
+	//{
+	//	if(isJump)
+	//	{
+	//		vspeed = -7;
+	//	}
+		
+	//}
+	
+	//vertical_speed = vertical_speed + gravity;
+	
+	//y = y + vertical_speed;
+	
+	
 
 /*
 //movimentação para 8 direções
@@ -35,15 +91,7 @@ velocity = 3;
     }
 	*/
 	
-	velocidade = 4;
-    isRight = keyboard_check(vk_right);
-    isLeft = keyboard_check(vk_left);        
-	isJump = keyboard_check_pressed(vk_space);   
-	onGround = place_meeting(x, y+1, objChao);
-
-	var movimento = isRight - isLeft;
 	
-	vertical_speed = vertical_speed + gravity;
 	
 	//if(place_meeting(x + horizontal_speed, y, objChao))
 	//{
@@ -55,21 +103,6 @@ velocity = 3;
 	//	vertical_speed = 0;
 	//}
 	
-	
-	horizontal_speed = movimento * walkSpeed;
-	
-	x = x + horizontal_speed;
-	
-	/*if(onGround)
-	{
-		//pulo
-		if(isJump)
-		{
-			vertical_speed = -7;
-		}
-	}*/
-	
-
 	
 //var xDirection = keyboard_check(ord("D")) - keyboard_check(ord("Q"));
 //var jump = keyboard_check_pressed(vk_space);
