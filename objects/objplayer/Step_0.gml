@@ -45,29 +45,29 @@ velocity = 3;
 	
 	vertical_speed = vertical_speed + gravity;
 	
-	if(place_meeting(x + horizontal_speed, y, objChao))
-	{
-		horizontal_speed = 0;
-	}
+	//if(place_meeting(x + horizontal_speed, y, objChao))
+	//{
+	//	horizontal_speed = 0;
+	//}
 	
-	if(place_meeting(x, y + vertical_speed, objChao))
-	{
-		vertical_speed = 0;
-	}
+	//if(place_meeting(x, y + vertical_speed, objChao))
+	//{
+	//	vertical_speed = 0;
+	//}
 	
 	
 	horizontal_speed = movimento * walkSpeed;
 	
 	x = x + horizontal_speed;
 	
-	if(onGround)
+	/*if(onGround)
 	{
 		//pulo
 		if(isJump)
 		{
 			vertical_speed = -7;
 		}
-	}
+	}*/
 	
 
 	
