@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "pl0000",
-    "path": "sprites/pl0000/pl0000.yy",
+    "name": "Parado",
+    "path": "sprites/Parado/Parado.yy",
   },
   "solid": true,
   "visible": true,

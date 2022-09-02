@@ -3,11 +3,19 @@
 	if( keyboard_check(vk_right) && place_free(x + space,y))
 	{
 		x += spd;
+		sprite_index = Andando;
+		image_xscale=1;
 	}
-	
-	if( keyboard_check(vk_left) && place_free(x - space,y))
+	else  if( keyboard_check(vk_left) && place_free(x - space,y))
 	{
 		x-= spd;
+		sprite_index = Andando;
+		image_xscale=-1;
+	}
+	else
+	{
+		sprite_index = Parado;
+		image_xscale=1;
 	}
 	
 	if(keyboard_check_pressed(vk_up) && !place_free(x, y + space))
@@ -23,7 +31,6 @@
 	{
 		gravity = 0;
 	}
-	
 	
 	
 	
